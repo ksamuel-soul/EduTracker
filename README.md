@@ -66,4 +66,6 @@ Add These Below CDN's inside you file...
 And Also Install the NodeJS Package...
 
     npm install jspdf --save
-![Alt text](/PDF_Genrating_Img.png)
+<p align="center">
+  <img src="PDF_Genrating_Img.png" alt="Alt text" width="650" style="border-radius:10px; border:2px solid #ccc; border-radius: 20px;" />
+</p>
