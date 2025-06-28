@@ -56,26 +56,9 @@ The platform also empowers teachers to upload marks, record attendance, and view
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: HTML, CSS, Bootstrap, JavaScript
-- **Backend**: Node.js / Express (or insert your backend tech)
-- **Database**: MongoDB / MySQL (based on your stack)
-- **Libraries/Tools**: Chart.js (for analysis), bcrypt (for password hashing), etc.
+- **Frontend**: Blade(PHP), Laravel, HTML, CSS, Bootstrap, JavaScript
+- **Backend**: PHP, Node.js
+- **Database**:  MySQL
+- **Libraries/Tools**: Chart.js (for analysis), bcrypt (for password hashing), jsPDF(for PDF generation).
 
 ---
-
-## 🚀 Getting Started
-
-To run the project locally:
-
-```bash
-# Clone the repository
-git clone https://github.com/your-username/EduTracker.git
-
-# Navigate to project directory
-cd EduTracker
-
-# Install dependencies
-npm install
-
-# Start the server
-npm start
