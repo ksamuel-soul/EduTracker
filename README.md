@@ -56,3 +56,14 @@ The platform also empowers teachers to upload marks, record attendance, and view
 - **Libraries/Tools**: Chart.js (for analysis), bcrypt (for password hashing), jsPDF(for PDF generation).
 
 ---
+## Code for the PDF Generation...
+Add These Below CDN's inside you file...
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+
+And Also Install the NodeJS Package...
+
+    npm install jspdf --save
+![Alt text](/PDF_Genrating_Img.png)
