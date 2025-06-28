@@ -59,11 +59,12 @@
                     style="width:40px;height:40px;line-height:40px;" id="name_letter"></span>
             </a>
             <ul class="dropdown-menu dropdown-menu-end profile-menu" aria-labelledby="profileDropdown">
-              <center><li><h6 class="dropdown-header">Profile Info</h6></li></center>
+              <center><li><h5 class="dropdown-header"><u>Profile Info</u></h5></li></center>
               <li><span class="dropdown-item-text" id="namee"> </span></li>
               <li><span class="dropdown-item-text" id="reg_no"></span></li>
               <li><span class="dropdown-item-text" id="sec"></span></li>
               <li><span class="dropdown-item-text" id="branch"></span></li>
+              <center><li><a href="/api/upd_stu_pass">Change Password</a></li></center>
             </ul>
           </li>
         </ul>

@@ -45,6 +45,11 @@ Route::get('/exam_marks', function(){
 Route::post('/stu_update/{id}', [AuthController::class, 'stu_update']);
 Route::post('/logout_stu', [AuthController::class, 'logout_stu'])->middleware('auth:sanctum');
 
+Route::get('/upd_stu_pass', function(){
+    return view('upd_stu_pass');
+});
+Route::post('/upd_stu_pass/{id}', [AuthController::class, 'upd_stu_pass']);
+
 
 // Section for Teachers...
 Route::get('/register_tea', function(){
@@ -74,6 +79,11 @@ Route::get('/stu_details_sec/{sec}', [AuthControllerTeacher::class, 'stu_details
 Route::get('/stu_att', function(){
     return view('stu_att');
 });
+
+Route::get('/upd_tea_pass', function(){
+    return view('upd_tea_pass');
+});
+Route::post('/upd_tea_pass/{id}', [AuthControllerTeacher::class, 'upd_tea_pass']);
 
 //Section for Admin(s)...
 Route::post('/adm_reg', [AuthControllerAdmin::class, 'adm_reg']);

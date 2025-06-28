@@ -12,13 +12,18 @@
 
     <!-- Navbar with Register Button -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Teacher Portal</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Teacher Login</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Right aligned Home button -->
+        <div class="d-flex ms-auto">
+            <a href="/" class="btn btn-light" id="btncall">Home</a>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <!-- Login Form -->
     <div class="container mt-5">
@@ -67,6 +72,7 @@
                     // alert(data.Message);
                     sessionStorage.setItem('token_tea', data.Token);
                     sessionStorage.setItem('tea_name', data.details.Tea_Name);
+                    sessionStorage.setItem('tea_Id', data.details.id);
                     window.location.href = "/api/home_tea";
                 }
                 else if(data.Status == 404)

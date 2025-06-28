@@ -118,4 +118,26 @@ class AuthControllerTeacher extends Controller
             'Status'=>200
         ];
     }
+
+     public function upd_tea_pass(Request $request, $id)
+    {
+        $search_user = teacher::where('id', $id)->first();
+        if ($search_user) {
+            $fields = $request->validate([
+                'Password' => 'required|max:255|confirmed',
+            ]);
+            $search_user->Password = Hash::make($fields['Password']);
+            $search_user->save();
+            return [
+                'Details' => $search_user,
+                'Message' => 'Updated Password',
+                'Status' => 200
+            ];
+        } else {
+            return [
+                'Message' => 'No such User Found..!!!',
+                'Status' => 404
+            ];
+        }
+    }
 }

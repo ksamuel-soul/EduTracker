@@ -32,6 +32,15 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="btn btn-outline-light" href="/api/upd_tea_pass" style="cursor:pointer">Update Password</a>
+          </li>
+        </ul>
+      </div>
+
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -39,6 +48,7 @@
           </li>
         </ul>
       </div>
+
     </div>
   </nav>
 
